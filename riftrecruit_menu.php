@@ -16,7 +16,7 @@ function recruitBlock($calling, $role, $needed){
 	<tr>
 		<td><img src='".RIFTREC."images/".strtolower($calling).".png' style='width:18px; height:18px; border='0'></td>
 		<td style='text-align:right;'>".$needed."</td>
-		<td><span class='".strtolower(str_replace(" ", "", $role))."'>".$role." ".$calling.($needed > 1 ? "s" : "")."</span></td>
+		<td><span class='rift_".strtolower($calling)."'>".$role." ".$calling.($needed > 1 ? "s" : "")."</span></td>
 	</tr>";
 }
 
